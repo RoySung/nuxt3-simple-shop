@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="products-page">
     <NavbarBar title="Product Shelf">
       <template #left>
         <NavbarBtn>Button</NavbarBtn>

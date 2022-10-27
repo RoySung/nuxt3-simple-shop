@@ -23,7 +23,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18.x
-          cache: pnpm
+          # TODO: it will fail if add this property
+          # cache: pnpm
 
       - name: Install And Build
         run: |
