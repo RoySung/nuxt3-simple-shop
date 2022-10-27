@@ -1,6 +1,5 @@
 <template>
   <div>
-    products
     <NavbarBar title="Product Shelf">
       <template #left>
         <NavbarBtn>Button</NavbarBtn>
@@ -9,5 +8,13 @@
         <NavbarBtn>Button</NavbarBtn>
       </template>
     </NavbarBar>
+    <div class="products-content">
+      <ProductList />
+    </div>
   </div>
 </template>
+<style lang="scss" scoped>
+.products-content {
+  padding: 18px 25px;
+}
+</style>

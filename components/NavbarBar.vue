@@ -21,12 +21,9 @@ defineProps({
 
 <style lang="scss" scoped>
 .navbar {
-  position: absolute;
   display: flex;
   width: 100%;
   height: 60px;
-  left: 0px;
-  top: 0px;
   background: #DDDDDD;
   &__btn-section {
     // display: flex;

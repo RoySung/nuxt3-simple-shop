@@ -10,9 +10,18 @@ export default defineNuxtConfig({
     }
   },
   css: [
-    '@/assets/css/reset.css',
-    '@/assets/css/main.css'
+    '@/assets/style/reset.css',
+    '@/assets/style/main.css'
   ],
+  vite: {
+    css: {
+      preprocessorOptions: {
+        scss: {
+          additionalData: '@import "@/assets/style/global.scss";'
+        }
+      }
+    }
+  },
   modules: [
     '@nuxtjs/google-fonts'
   ],

@@ -2,3 +2,7 @@ html * {
   color: #000000;
   font-family: Roboto, sans-serif;
 }
+
+a {
+  text-decoration: none;
+}
