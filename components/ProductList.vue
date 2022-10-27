@@ -8,7 +8,7 @@
       />
     </div>
     <div class="product-list__footer">
-      <button class="load-more-btn">
+      <button class="load-more-btn" @click="loadMore">
         Load More
       </button>
     </div>
@@ -29,6 +29,10 @@ const products = reactive(Array.from(Array(9)).map((_, index) => {
   product.product_id = product.product_id.replace('{id}', index.toString())
   return product
 }))
+
+const loadMore = () => {
+  // TODO: add action about load more products
+}
 
 </script>
 

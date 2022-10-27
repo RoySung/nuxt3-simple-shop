@@ -1,13 +1,12 @@
 <template>
   <div>
     <h1>Welcome to the homepage</h1>
-    <AppAlert>
-      This is an auto-imported component
-    </AppAlert>
   </div>
 </template>
-<script>
+<script lang="ts" setup>
 definePageMeta({
   layout: 'default'
 })
+navigateTo('/products')
 </script>
+<style lang="scss" scoped></style>
