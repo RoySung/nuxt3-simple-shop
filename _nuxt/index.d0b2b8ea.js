@@ -1,0 +1,1 @@
+import{a as t,r as o,o as a,b as n,e as s,w as c,f as r,h as p}from"./entry.fa45d2a5.js";const l={},_=r("h1",null,"Welcome to the homepage",-1);function d(i,m,u,f,h,x){const e=o("AppAlert");return a(),n("div",null,[_,s(e,null,{default:c(()=>[p(" This is an auto-imported component ")]),_:1})])}const $=t(l,[["render",d]]);export{$ as default};
