@@ -8,5 +8,17 @@ export default defineNuxtConfig({
     postcss: {
       postcssOptions: require('./postcss.config.js')
     }
+  },
+  css: [
+    '@/assets/css/reset.css',
+    '@/assets/css/main.css'
+  ],
+  modules: [
+    '@nuxtjs/google-fonts'
+  ],
+  googleFonts: {
+    families: {
+      Roboto: true
+    }
   }
 })

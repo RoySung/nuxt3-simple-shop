@@ -1,5 +1,5 @@
 <template>
   <div>
-    <slot />
+    {{ $route.params.id }}
   </div>
 </template>
