@@ -45,7 +45,7 @@ const defaultProduct: Product = {
   product_name: 'Default Name',
   product_price: 0,
   product_category: '',
-  product_img_path: '',
+  product_img_path: 'https://picsum.photos/800/600',
   product_description: ''
 }
 const props = defineProps({
@@ -61,7 +61,7 @@ const props = defineProps({
         product_name: 'New Product',
         product_price: 0,
         product_category: '',
-        product_img_path: '',
+        product_img_path: 'https://picsum.photos/800/600',
         product_description: ''
       }
     }
@@ -71,7 +71,7 @@ const emit = defineEmits(['update:isOpen', 'update:product'])
 
 const newProduct = reactive({ ...defaultProduct })
 const emitNewProduct = () => {
-  emit('update:product', newProduct)
+  emit('update:product', { ...newProduct })
 }
 const setupProduct = () => {
   const product = props.product
