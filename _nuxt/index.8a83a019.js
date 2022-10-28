@@ -1,1 +1,0 @@
-import{a as t,b as o,e as a,f as n,w as r,h as s,r as c,o as p,i as l}from"./entry.8ba30bd4.js";const u=s("h1",null,"Welcome to the homepage",-1),f=t({__name:"index",setup(m){return o().replace({name:"products"}),(d,i)=>{const e=c("AppAlert");return p(),a("div",null,[u,n(e,null,{default:r(()=>[l(" This is an auto-imported component ")]),_:1})])}}});export{f as default};
