@@ -1,0 +1,1 @@
+import{k as e,l as o,o as t,f as a,b as n}from"./entry.bf17df26.js";const s=n("h1",null,"Welcome to the homepage",-1),c=[s],d=e({__name:"index",setup(_){return o("/products"),(r,l)=>(t(),a("div",null,c))}});export{d as default};
