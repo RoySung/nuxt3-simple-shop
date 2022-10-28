@@ -65,6 +65,10 @@ const onCreateProduct = async (product: Product) => {
     font-size: 18px;
     border: none;
     cursor: pointer;
+    @include breakpoint(xlpad) {
+      width: 150px;
+      height: 48px;
+    }
     &:hover {
       opacity: 0.8;
     }

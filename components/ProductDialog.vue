@@ -9,23 +9,23 @@
         @submit.prevent="emitNewProduct"
       >
         <div class="product-form__field">
-          <label for="product-name">Name</label>
+          <label for="product-name">Name *</label>
           <input id="product-name" v-model="newProduct.product_name" type="text">
         </div>
         <div class="product-form__field">
-          <label for="product-category">Category</label>
+          <label for="product-category">Category *</label>
           <input id="product-category" v-model="newProduct.product_category" type="text">
         </div>
         <div class="product-form__field">
-          <label for="product-price">Price</label>
+          <label for="product-price">Price *</label>
           <input id="product-price" v-model="newProduct.product_price" type="number">
         </div>
         <div class="product-form__field">
-          <label for="product-img">Img</label>
+          <label for="product-img">Img *</label>
           <input id="product-img" v-model="newProduct.product_img_path" type="text">
         </div>
         <div class="product-form__field product-form__field--textarea">
-          <label for="product-desc">Description</label>
+          <label for="product-desc">Description *</label>
           <textarea id="product-desc" v-model="newProduct.product_description" ows="4" cols="50" />
         </div>
         <div class="product-form__footer">
@@ -131,6 +131,9 @@ onMounted(() => {
     font-size: 26px;
     border: 0;
     background: none;
+    @include breakpoint(xlpad) {
+      font-size: 24px;
+    }
     &:hover {
       opacity: 0.8;
       cursor: pointer;
@@ -140,12 +143,20 @@ onMounted(() => {
     &__field {
       height: 40px;
       font-size: 16px;
+      @include breakpoint(xlpad) {
+        display: flex;
+        flex-direction: column;
+        height: 59px;
+      }
       &:not(:first-of-type) {
         margin-top: 10px;
       }
       label {
         display: inline-block;
         width: 105px;
+        @include breakpoint(xlpad) {
+          margin-bottom: 3px;
+        }
       }
       input {
         background: #DDDDDD;
@@ -182,6 +193,10 @@ onMounted(() => {
         border: none;
         margin-left: 105px;
         cursor: pointer;
+        @include breakpoint(xlpad) {
+          width: 120px;
+          height: 36px;
+        }
         &:hover {
           opacity: 0.8;
         }

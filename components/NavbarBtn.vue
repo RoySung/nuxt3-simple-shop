@@ -25,10 +25,13 @@ const handleClick = (e: MouseEvent): void => {
   background: #C4C4C4;
   font-size: 24px;
   font-weight: 400;
-  line-height: 28px;
+  height: 100%;
   border: none;
-  padding: 16px 15px;
+  padding: 0 15px;
   cursor: pointer;
+  @include breakpoint(xlpad) {
+    font-size: 22px;
+  }
   &:hover {
     opacity: 0.8;
   }
