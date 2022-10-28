@@ -2,7 +2,8 @@
 
 ## TODO List
 
-- [ ] Using virtual scroller in ProductList
+- [x] Using virtual scroller in ProductList
+- [ ] setting keepalive for the products page
 - [ ] Unit test
 - [ ] Backend APIs for Products
 - [ ] SEO meta tags
