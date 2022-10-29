@@ -20,6 +20,11 @@
   </div>
 </template>
 <script lang="ts" setup>
+import { onActivated } from 'vue'
+definePageMeta({
+  layout: 'default',
+  keepalive: true
+})
 const { getProducts, createProduct } = useProductAPI()
 const pageSize = 6
 const hasMoreProducts = ref(true)
@@ -45,6 +50,18 @@ const onCreateProduct = async (product: Product) => {
   products.push(newProduct)
   isDialogOpen.value = false
 }
+
+onActivated(() => {
+  const router = useRouter()
+  const scroll = router.options.history.state.scroll
+
+  nextTick(() => {
+    setTimeout(() => {
+      // @ts-ignore-next-line
+      window.scrollTo({ behavior: 'smooth', top: scroll?.top })
+    }, 500)
+  })
+})
 </script>
 <style lang="scss" scoped>
 .products-content {

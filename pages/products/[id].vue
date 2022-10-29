@@ -20,6 +20,10 @@
   </div>
 </template>
 <script lang="ts" setup>
+definePageMeta({
+  layout: 'default',
+  keepalive: true
+})
 const { getProduct, updateProduct } = useProductAPI()
 
 const { params } = useRoute()
