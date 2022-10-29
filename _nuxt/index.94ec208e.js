@@ -1,0 +1,1 @@
+import{a as e,b as o,e as t,f as a,o as n}from"./entry.0fec5567.js";const s=a("h1",null,"Welcome to the homepage",-1),c=[s],d=e({__name:"index",setup(_){return o("/products"),(r,l)=>(n(),t("div",null,c))}});export{d as default};
